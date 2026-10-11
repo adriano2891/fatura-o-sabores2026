@@ -1,0 +1,290 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0c0a09;
+  --bg-secondary: #1c1917;
+  --card-bg: #1c1917;
+  --text-primary: #ffffff;
+  --text-secondary: #a8a29e;
+  --border-color: #292524;
+  --accent: #059669;
+  --gold: #f59e0b;
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --card-bg: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+  --accent: #059669;
+  --gold: #d97706;
+  color-scheme: light;
+}
+
+/* Light Theme Global Rules */
+html[data-theme="light"] body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+html[data-theme="light"] .min-h-screen.bg-stone-950 {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Surfaces and Cards */
+html[data-theme="light"] .bg-stone-950,
+html[data-theme="light"] .bg-stone-950\/95,
+html[data-theme="light"] .bg-stone-950\/90,
+html[data-theme="light"] .bg-stone-950\/80,
+html[data-theme="light"] .bg-stone-950\/60,
+html[data-theme="light"] .bg-stone-950\/40 {
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme="light"] .bg-stone-900,
+html[data-theme="light"] .bg-stone-900\/95,
+html[data-theme="light"] .bg-stone-900\/90,
+html[data-theme="light"] .bg-stone-900\/80,
+html[data-theme="light"] .bg-stone-900\/60,
+html[data-theme="light"] .bg-stone-900\/40 {
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
+
+html[data-theme="light"] .bg-stone-850 {
+  background-color: #f8fafc !important;
+}
+
+html[data-theme="light"] .bg-stone-800 {
+  background-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] .hover\:bg-stone-800:hover,
+html[data-theme="light"] .hover\:bg-stone-850:hover {
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme="light"] .hover\:bg-stone-900:hover {
+  background-color: #ffffff !important;
+}
+
+html[data-theme="light"] .shadow-xl,
+html[data-theme="light"] .shadow-2xl,
+html[data-theme="light"] .shadow-lg {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+html[data-theme="light"] header.bg-stone-950,
+html[data-theme="light"] nav.bg-stone-950,
+html[data-theme="light"] nav.bg-stone-950\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Borders */
+html[data-theme="light"] .border-stone-800,
+html[data-theme="light"] .border-stone-850,
+html[data-theme="light"] .border-stone-700,
+html[data-theme="light"] .border-stone-800\/80,
+html[data-theme="light"] .border-stone-800\/60,
+html[data-theme="light"] .border-stone-800\/90 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Text Colors */
+html[data-theme="light"] .text-stone-100,
+html[data-theme="light"] .text-stone-200 {
+  color: #1e293b !important;
+}
+
+html[data-theme="light"] .text-stone-300 {
+  color: #334155 !important;
+}
+
+html[data-theme="light"] .text-stone-400 {
+  color: #64748b !important;
+}
+
+html[data-theme="light"] .text-stone-500 {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="light"] .text-white:not([class*="bg-amber-"]):not([class*="bg-orange-"]):not([class*="bg-emerald-"]):not([class*="bg-teal-"]):not([class*="bg-rose-"]):not([class*="bg-purple-"]):not([class*="bg-blue-"]):not([class*="bg-cyan-"]):not([class*="bg-indigo-"]):not([class*="from-"]):not([class*="via-"]):not([class*="to-"]) {
+  color: #0f172a !important;
+}
+
+/* Inputs, Selects, Textareas */
+html[data-theme="light"] input,
+html[data-theme="light"] select,
+html[data-theme="light"] textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html[data-theme="light"] input::placeholder,
+html[data-theme="light"] textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Modals & Backdrop */
+html[data-theme="light"] .bg-black\/85,
+html[data-theme="light"] .bg-black\/80,
+html[data-theme="light"] .bg-black\/75 {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+}
+
+/* Tables */
+html[data-theme="light"] thead.bg-stone-950 {
+  background-color: #f1f5f9 !important;
+  color: #475569 !important;
+}
+
+html[data-theme="light"] tr:hover {
+  background-color: #f8fafc !important;
+}
+
+/* Subtle Badges */
+html[data-theme="light"] .bg-stone-950\/80,
+html[data-theme="light"] .bg-stone-950\/90,
+html[data-theme="light"] .bg-stone-950\/60,
+html[data-theme="light"] .bg-stone-950\/40 {
+  background-color: #f1f5f9 !important;
+}
+
+html[data-theme="light"] .bg-emerald-950,
+html[data-theme="light"] .bg-emerald-950\/80,
+html[data-theme="light"] .bg-emerald-950\/60,
+html[data-theme="light"] .bg-emerald-950\/50,
+html[data-theme="light"] .bg-emerald-950\/40 {
+  background-color: #ecfdf5 !important;
+  color: #047857 !important;
+  border-color: #a7f3d0 !important;
+}
+
+html[data-theme="light"] .bg-rose-950,
+html[data-theme="light"] .bg-rose-950\/80,
+html[data-theme="light"] .bg-rose-950\/70,
+html[data-theme="light"] .bg-rose-950\/60 {
+  background-color: #fff1f2 !important;
+  color: #be123c !important;
+  border-color: #fecdd3 !important;
+}
+
+html[data-theme="light"] .bg-amber-950,
+html[data-theme="light"] .bg-amber-950\/80,
+html[data-theme="light"] .bg-amber-950\/60 {
+  background-color: #fffbeb !important;
+  color: #b45309 !important;
+  border-color: #fde68a !important;
+}
+
+html[data-theme="light"] .bg-blue-950,
+html[data-theme="light"] .bg-blue-950\/80,
+html[data-theme="light"] .bg-blue-950\/60 {
+  background-color: #eff6ff !important;
+  color: #1d4ed8 !important;
+  border-color: #bfdbfe !important;
+}
+
+html[data-theme="light"] .bg-purple-950,
+html[data-theme="light"] .bg-purple-950\/80,
+html[data-theme="light"] .bg-purple-950\/60 {
+  background-color: #faf5ff !important;
+  color: #7e22ce !important;
+  border-color: #e9d5ff !important;
+}
+
+/* Gradients in light mode */
+html[data-theme="light"] .bg-gradient-to-b.from-stone-900.via-stone-900\/95.to-stone-950 {
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff, #f8fafc) !important;
+}
+
+html[data-theme="light"] .bg-gradient-to-r.from-stone-900.via-stone-900\/95.to-amber-950\/30 {
+  background-image: linear-gradient(to right, #ffffff, #ffffff, #fffbeb) !important;
+}
+
+html[data-theme="light"] .bg-gradient-to-r.from-stone-900.via-stone-900.to-amber-950\/40 {
+  background-image: linear-gradient(to right, #ffffff, #ffffff, #fffbeb) !important;
+}
+
+html[data-theme="light"] .bg-gradient-to-r.from-stone-900.via-stone-900\/95.to-orange-950\/40 {
+  background-image: linear-gradient(to right, #ffffff, #ffffff, #fff7ed) !important;
+}
+
+/* Smooth visual transition without layout shift */
+body, header, nav, .bg-stone-900, .bg-stone-950, .border-stone-800 {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbars for POS touch screens */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.5);
+}
+
+/* Hide scrollbar for touch swipeable tabs while preserving scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.touch-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Safe area padding for mobile devices */
+.pb-safe {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom, 1.25rem));
+}
+
+/* Print styling for receipts */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80mm;
+    margin: 0;
+    padding: 2mm;
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
